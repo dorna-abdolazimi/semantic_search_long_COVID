@@ -1,5 +1,4 @@
-# semantic_search_long_COVID
-# Introduction
+# Semantic Search on Long COVID (PASC) Publications
 
 In this project, we are interested in dense information retrieval (IR) in the database of scientific papers related to long COVID (PASC) that are available on PubMed. There are a variey of [pretrained sentence transformers](https://huggingface.co/sentence-transformers) for IR/semantic search on SentenceTransformers 🤗. These models were trained on datasets such as [PAQ](https://github.com/facebookresearch/PAQ), [MSMARCO](https://microsoft.github.io/msmarco/), [GoogleAQ](https://github.com/allenai/gooaq) and, while their general performance is good, they can perform rather poorly on domains that are very different from the domain that they were trained on. The main challenge in domain adaptation for IR is the lack of labeled training data for the specific domian of interest. Adaptive pre-training methods such as [TSDAE](https://arxiv.org/pdf/2104.06979) and [generative pseudo-labeling (GPL)](https://arxiv.org/pdf/2112.07577) are the main two techniques that have been proposed for this scenario. In this project, we use GPL to finetune [msmarco-distilbert-dot-v5](https://huggingface.co/sentence-transformers/msmarco-distilbert-dot-v5) for IR in our domain.
 
